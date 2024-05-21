@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pokedex">
+        <h1>Pokémon</h1>
+
+        <input type="text" id="pokemonNumber" placeholder="Digite o número do Pokémon">
+        <button onclick="buscarPokemon()">Buscar</button>
+
+        <img src="pokedex.png" alt="Pokédex" class="pokedex">
+        <!-- Imagem do Pokémon será exibida aqui -->
+        <div class="pokemon-info-container">
+            <div id="pokemonImageContainer">
+                <!-- Imagem do Pokémon será exibida aqui -->
+            </div>
+
+            <div id="pokemonInfo" class="pokemon-info">
+                <!-- Informações do Pokémon serão exibidas aqui -->
+            </div>
+        </div>
+        <div>
+            <a href="../index.html">
+                <button>Pagina principal</button>
+            </a>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

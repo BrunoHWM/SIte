@@ -1,0 +1,86 @@
+body {
+    /* Define a cor de fundo do corpo */
+    background-color: black;
+    /* Define um gradiente de fundo para o corpo */
+    background-image: linear-gradient(#833CD5, #3C88D5);
+    /* Mantém o gradiente de fundo fixo durante o rolamento */
+    background-attachment: fixed;
+    /* Centraliza o texto horizontalmente */
+    text-align: center;
+    /*Deixa uma sombra para o texto*/
+    text-shadow: 8px 2px 0px rgb(0, 0, 0);
+  }
+h2 {
+    /* Define a cor do texto */
+    color: #ffffff;
+    /*Deixa uma sombra para o texto*/
+    text-shadow: 0px 2px 0px rgb(0, 0, 0);
+    /*Define a fonte*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  }
+  
+
+/* Estilos para os botões */
+button {
+    /* Define a largura do botão */
+    width: 200px;
+    /* Centraliza o botão horizontalmente */
+    margin: 20px auto;
+    /* Adiciona uma borda ao redor do botão */
+    border: 1px solid #281883cb;
+    /* Adiciona cantos arredondados ao botão */
+    border-radius: 5px;
+    /* Adiciona preenchimento interno ao botão */
+    padding: 10px;
+    /* Adiciona uma sombra ao redor do botão */
+    box-shadow: 0px 0px 10px rgb(63, 65, 66);
+    /* Posiciona o botão horizontalmente */
+    margin: 1% 43%;
+    /* Define a cor de fundo do botão */
+    background-color: rgb(100, 1, 167);
+  }
+/* Estilos para o título do blog */
+#blog {
+    margin-top: 10%; /* Margem superior de 10% */
+    text-align: center; /* Alinhamento central */
+    font-size: 150px; /* Tamanho da fonte */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Fonte */
+    color: #ffffff; /* Cor do texto */
+}
+
+/* Estilos para links */
+a {
+    text-decoration: none; /* Remover sublinhado */
+}
+
+/* Estilos para o texto do rodapé */
+#v {
+    height: 80px;
+    margin-top: 10%; /* Margem superior de 10% */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: Georgia, 'Times New Roman', Times, serif;/* Fonte */
+}
+
+/* Estilos e efeito de hover para botões */
+button {
+    margin: 10px; /* Margem de 10px para todos os lados */
+    transition: transform 0.3s; /* Transição para transformação */
+}
+
+button:hover {
+    transform: translateY(-20px); /* Translação vertical de -20px no hover */
+}
+
+/* Animação de pulo */
+@keyframes jump {
+    0% { transform: translateY(2); } /* Início da animação */
+    50% { transform: translateY(-20px); } /* Meio da animação */
+    100% { transform: translateY(0); } /* Fim da animação */
+}
+
+/* Estilos para o texto com animação */
+.text {
+    color: #ffffff; /* Cor do texto */
+    margin-top: 10%; /* Margem superior de 10% */
+    animation: jump 1s infinite; /* Animação de pulo infinita */
+}

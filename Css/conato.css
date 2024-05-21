@@ -1,0 +1,117 @@
+/* Estilos para o elemento com ID 'eu' */
+#eu {
+    font-size: 30px; /* Tamanho da fonte em pixels */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Estilos para a navegação */
+nav {
+    color: black;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid #333333;
+    padding: 20px; /* Adiciona espaço interno */
+    font-size: 24px; /* Tamanho da fonte em pixels */
+}
+
+/* Estilos para a barra lateral */
+aside {
+    background-color: white;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: black;
+    border-bottom: 2px solid #333333;
+    padding: 20px; /* Adiciona espaço interno */
+    font-size: 24px; /* Tamanho da fonte em pixels */
+}
+
+/* Estilos para legendas */
+figcaption {
+    font-size: 14px; /* Tamanho da fonte em pixels */
+    font-style: italic;
+}
+
+/* Estilos para cabeçalhos de nível 1 */
+h1 {
+    font-family: serif;
+    background-image: url(../img/wit.jfif);
+    padding: 20px;
+    font-size: 36px; /* Tamanho da fonte em pixels */
+}
+
+.quadrado {
+    width: 40%; /* Largura do quadrado */
+    margin: 40px auto; /* Margem para centralizar o quadrado */
+  }
+  
+  #texto {
+    font-family: Times;
+    font-size: 18px; /* Tamanho da fonte em pixels */
+    text-align: center;
+  }
+  
+/* Estilos para cabeçalhos de nível 2 */
+h2 {
+    margin-top: 20px; /* Margem superior em pixels */
+    font-size: 24px; /* Tamanho da fonte em pixels */
+}
+
+/* Estilos para o elemento com ID 'contato' */
+#contato {
+    margin-bottom: 6px; /* Margem inferior em pixels */
+    font-size: 30px; /* Tamanho da fonte em pixels */
+}
+
+/* Estilos para o corpo do documento */
+body {
+    background-color: grey;
+    font-size: 16px; /* Tamanho da fonte em pixels */
+}
+
+/* Estilos para o elemento com ID 'div1' */
+#div1 {
+    background-position: center;
+    background-color: gray;
+    height: 300px; /* Altura em pixels */
+    text-align: center;
+    margin: 10px;
+}
+
+/* Estilos para o elemento com ID 'gato' */
+#gato {
+    width: 30%; /* Largura em relação à largura do pai */
+    height: 100%; /* Altura em relação à altura do pai */
+}
+
+/* Estilos para o elemento com ID 'dif' */
+#dif {
+    background-color: white;
+    text-align: center;
+    font-size: 30px; /* Tamanho da fonte em pixels */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: white;
+    width: 5%; 
+    height: 20px; /* Altura em pixels */
+    font-size: 14px; /* Tamanho da fonte em pixels */
+}
+
+@media screen and (max-width: 768px) {
+    #texto{
+        font-size: 16px;
+    }
+    .quadrado {
+        width: 80%; /* Largura do quadrado */
+        margin: 40px auto; /* Margem para centralizar o quadrado */
+      }
+    #div1{
+        width: 100%;
+        height: 80%;
+    }
+  }

@@ -1,0 +1,108 @@
+/* Estilos para o botão */
+button {
+  /* Define a largura do botão */
+  width: 32%; /* Ajusta a largura em relação à largura do pai */
+  /* Centraliza o botão horizontalmente */
+  margin: 20px auto;
+  /* Adiciona uma borda ao redor do botão */
+  border: 1px solid #281883cb;
+  /* Adiciona cantos arredondados ao botão */
+  border-radius: 5px;
+  /* Adiciona preenchimento interno ao botão */
+  padding: 10px;
+  /* Adiciona uma sombra ao redor do botão */
+  box-shadow: 0px 0px 10px rgb(63, 65, 66);
+  /* Define a cor de fundo do botão */
+  background-color: rgb(100, 1, 167);
+}
+
+/* Estilos para o corpo do documento */
+body {
+  /* Define a cor de fundo do corpo */
+  background-color: black;
+  /* Define um gradiente de fundo para o corpo */
+  background-image: linear-gradient(#833CD5, #3C88D5);
+  /* Mantém o gradiente de fundo fixo durante o rolamento */
+  background-attachment: fixed;
+  /* Centraliza o texto horizontalmente */
+  text-align: center;
+  /*Deixa uma sombra para o texto*/
+  text-shadow: 8px 2px 0px rgb(0, 0, 0);
+}
+
+/* Estilos para o elemento com ID 'blog' */
+#blog {
+  /* Centraliza o texto horizontalmente */
+  text-align: center;
+  /* Define o tamanho da fonte */
+  font-size: 100px; /* Tamanho da fonte em relação à largura da viewport */
+  /* Define a família da fonte */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* Define a cor do texto */
+  color: #ffffff;
+  /*define a margin para o texto*/
+  margin-top: 6%;
+  margin-bottom: 10%;
+}
+
+/* Estilos para links */
+a {
+  text-decoration: none; /* Remover sublinhado */
+}
+
+/* Estilos para os cabeçalhos de nível 2 */
+h2 {
+  /* Define a cor do texto */
+  color: #ffffff;
+  /*Deixa uma sombra para o texto*/
+  text-shadow: 0px 2px 0px rgb(0, 0, 0);
+  /*Define a fonte*/
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+/* Estilos para botões dentro do rodapé */
+button {
+  /* Adiciona margem ao redor do botão */
+  margin: 10px;
+  /* Define a transição de transformação para o botão */
+  transition: transform 0.3s;
+}
+
+/* Efeito de hover para botões no rodapé */
+button:hover {
+  /* Define a transformação quando o botão é passado com o mouse */
+  transform: translateY(-20px);
+}
+
+/* Estilos para o texto do rodapé */
+#v {
+  margin-top: 4%; /* Margem superior de 10% */
+}
+
+/* Define a animação de pulo */
+@keyframes jump {
+  0% { transform: translateY(2); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Estilos para o texto com a classe 'text' */
+.text {
+  /* Define a cor do texto */
+  color: #ffffff;
+  /* Define a margem superior */
+  margin-top: 2%;
+  /* Aplica a animação 'jump' ao texto */
+  animation: jump 1s infinite;
+}
+#div2{
+  margin-top: 40px;
+}
+
+/* Media Query para telas menores */
+@media screen and (max-width: 768px) {
+  #blog {
+    font-size: 80px; /* Ajusta o tamanho da fonte para telas menores */
+    margin-bottom: 20%;
+  }
+}

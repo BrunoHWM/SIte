@@ -1,0 +1,70 @@
+/*Define o texto*/
+#Texto {
+    font-family: 'Sedgwick Ave', cursive; /* Define a fonte do texto */
+    background-color: orangered; /* Define a cor de fundo */
+    height: 60%; /* Define a altura */
+    width: 47%; /* Define a largura */
+    margin-right: 5px; /* Define a margem direita */
+    font-size: 20px; /* Define o tamanho da fonte */
+    line-height: 50px;/*Define o espaçamento entre linhas*/
+}
+
+/*
+Estilo para o título principal.
+*/
+#title {
+    color: yellow; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+/*
+Estilo para a div1 que contém informações adicionais.
+*/
+#div1 {
+    height: 60%; /* Define a altura */
+    width: 47%; /* Define a largura */
+}
+
+/*
+Estilo para todas as divs.
+*/
+div {
+    float: left; /* Faz as divs flutuarem à esquerda */
+    font-family: 'Caveat', cursive; /* Define a fonte do texto */
+    padding: 0px 10px; /* Define o preenchimento */
+}
+
+/*
+Estilo para imagens.
+*/
+img {
+    height: 55%; /* Define a altura */
+    width: 40%; /* Define a largura */
+}
+
+/*
+Estilo para o conteúdo principal da página.
+*/
+#conteudo {
+    height: 100%; /* Define a altura */
+    width: 100%; /* Define a largura */
+}
+
+/*
+Estilo para o rodapé da página.
+*/
+footer {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 46%; /* Define a margem superior */
+}
+
+/*
+Estilo para parágrafos.
+*/
+p {
+    color: black; /* Define a cor do texto */
+    font-size: 20px;
+}
+button{
+   background-color: orangered;
+}

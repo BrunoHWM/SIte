@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Corpo da calculadora -->
+    <div class="corpo">
+        <!-- Visor da calculadora -->
+        <input type="text" id="display" disabled>
+        <!-- Botões da calculadora -->
+        <div class="buttons">
+            <button onclick="limpar()">C</button> <!-- Botão de Limpar -->
+            <button onclick="concatenar('7')">7</button> <!-- Botão do número 7 -->
+            <button onclick="concatenar('8')">8</button> <!-- Botão do número 8 -->
+            <button onclick="concatenar('9')">9</button> <!-- Botão do número 9 -->
+            <button onclick="concatenar('+')">+</button> <!-- Botão de Adição -->
+            <button onclick="concatenar('4')">4</button> <!-- Botão do número 4 -->
+            <button onclick="concatenar('5')">5</button> <!-- Botão do número 5 -->
+            <button onclick="concatenar('6')">6</button> <!-- Botão do número 6 -->
+            <button onclick="concatenar('-')">-</button> <!-- Botão de Subtração -->
+            <button onclick="concatenar('1')">1</button> <!-- Botão do número 1 -->
+            <button onclick="concatenar('2')">2</button> <!-- Botão do número 2 -->
+            <button onclick="concatenar('3')">3</button> <!-- Botão do número 3 -->
+            <button onclick="concatenar('*')">*</button> <!-- Botão de Multiplicação -->
+            <button onclick="concatenar('0')">0</button> <!-- Botão do número 0 -->
+            <button onclick="concatenar('.')">.</button> <!-- Botão de Ponto Decimal -->
+            <button onclick="calcular()">=</button> <!-- Botão de Igual -->
+            <button onclick="concatenar('/')">/</button> <!-- Botão de Divisão -->
+        </div>
+    </div>
+
+    <!-- Botão para retornar à página principal -->
+    <a href="../../index.html">
+        <button id="volta">
+            <h2>Página principal</h2>
+        </button>
+    </a>
+        
+    <!-- Inclusão do arquivo de script JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>

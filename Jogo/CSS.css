@@ -1,0 +1,22 @@
+body{
+background-color: blueviolet;    
+}
+
+button {
+    color: white;
+    /* Define a largura do botão */
+    width: 55%; /* Ajusta a largura em relação à largura do pai */
+    /* Centraliza o botão horizontalmente */
+    margin: 20px auto;
+    /* Adiciona uma borda ao redor do botão */
+    border: 1px solid #281883cb;
+    /* Adiciona cantos arredondados ao botão */
+    border-radius: 5px;
+    /* Adiciona preenchimento interno ao botão */
+    padding: 10px;
+    /* Adiciona uma sombra ao redor do botão */
+    box-shadow: 0px 0px 10px rgb(63, 65, 66);
+    /* Define a cor de fundo do botão */
+    background-color: rgb(100, 1, 167);
+  }
+  
