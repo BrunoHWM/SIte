@@ -1,56 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+
 <head>
-    <!-- Título da página -->
-    <title>Front End Web 23-1T</title>
-    <!-- Codificação de caracteres -->
-    <meta charset="utf-8"> 
-    <!-- Referências aos arquivos de estilos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages - Bruno Henrique Werlang Machado </title>
     <link rel="stylesheet" href="./Css/conato.css">
-    <link rel="stylesheet" href="./Css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--Dev Icon Fonts-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+
 </head>
+
 <body>
-    <!-- Navegação -->
-    <nav>
-        <!-- Título da navegação em movimento -->
-        <h1 id="eu"><marquee>Minhas características</marquee></h1>
-    </nav>
+    <main id="container">
 
-    <!-- Cabeçalho -->
-    <header class="quadrado">
-        <!-- Informações pessoais -->
-        <h2 id="texto">
-            Meu nome é <b>Bruno Henrique Werlang Machado</b> tenho 20 anos. Meus hobbies incluem jogar online, 
-            ir à academia, jogar basquete e cozinhar de vez em quando para relaxar. Meu objetivo é aprender para 
-            utilizar essas habilidades futuramente no meu trabalho.
-        </h2>   
-    </header>
+        <aside id="bio-container">
+            <h2>Bruno Henrique Werlang Machado</h2>
+            <img id="bio-image" src="/img/user_256.png" alt="Bruno Henrique Werlang Machado">
+            <p>Olá, meu nome é Bruno e sou um <span class="highlight"> Estudante em TI.</span></p>
+            <p id="welcome-text">Seja bem-vindo!</p>
 
-    <!-- Barra lateral -->
-    <aside>
-        <!-- Contatos -->
-        <h2 id="contato">Contatos:</h2>
-        <p>Numero: (51) 98234-8977 </p>
-        <p>Email: bhzim@gmail.com</p>    
-    </aside>
-
-    <!-- Div com imagem -->
-    <div id="div1">
-        <img id="gato" src="./img/gato - Copia.jfif"> 
-    </div>
-    
-    <!-- Div com lista de diferenciais -->
-    <div id="dif" >
-        <h3> 
-            <!-- Lista de diferenciais -->
-            <ul>Diferenciais:
-                <li>JAVASCRIPT</li>
-                <li>JAVA</li>
-                <li>HTMl</li>
-                <li>CSS</li>
+            <ul id="social-container">
+                <li><a href="https://www.linkedin.com/in/bruno-henrique-werlang-44354027a/" target="_blank"> <ion-icon name="logo-linkedin"></ion-icon> </a></li>
+                <li><a href="https://www.instagram.com/bh_0101" target="_blank"> <ion-icon name="logo-instagram"></ion-icon> </a></li>
+               
             </ul>
-        </h3>
-    </div>
 
-    <!-- Rodapé -->
-   
+            <div id="email-container">
+                <ion-icon name="mail"></ion-icon>
+                <a href="mailto:bhwm88@gmail.com">bhwm88@gmail.com</a>
+                <img id="fone" src="./img/chamada-telefonica.png" height="6% " width="6%">
+                    <a href="51 99280-0705">51 99280-0705</a>
+            </div>
+        </aside>
+
+        <section id="about-container">
+            <h1 id="name">Bruno Henrique Werlang Machado</h1>
+            <p id="title"><span class="highlight">Estudante em TI</span></p>
+            <p class="description"> Estudante de analise e desenvolvimento sistemas, busco a primeira oportunidade de estágio na área. Tenho o conhecimento atualmente de Analisar Orientações Técnicas, desenvolver e organizar interface gráfica para aplicação desktop, programar aplicativos com integração de banco de dados.</p>
+            <a href="https://github.com/BrunoHWM" id="btn-projects"><ion-icon name="share"></ion-icon><span>Ver projetos</span></a>
+
+            <h2 id="skills-section-title">Minhas Skills</h2>
+            <p class="description">Conheça as tecnologias que domino:</p>
+
+            <div id="skills-container">
+                <div class="skills-box">
+                    <p class="skills-title">Desenvolvimento</p>
+                    <i class="devicon-git-plain colored"></i>
+                </div>
+                <div class="skills-box">
+                    <p class="skills-title">Desenvolvimento Web</p>
+                    <i class="devicon-html5-plain colored"></i>
+                    <i class="devicon-css3-plain colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+    <ion-icon name="heart"></ion-icon>
+
+
+
+    <i class="devicon-html5-plain"></i>
+
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>

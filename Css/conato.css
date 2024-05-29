@@ -1,117 +1,267 @@
-/* Estilos para o elemento com ID 'eu' */
-#eu {
-    font-size: 30px; /* Tamanho da fonte em pixels */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* Reset */
+
+* { 
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
-/* Estilos para a navegação */
-nav {
-    color: black;
+/* Variáveis */
+:root {
+    --main-color: #0a91eb;
+    --main-text-color: #FFF;
+    --border-color: #999;
+    --bio-bg-color: #23284f;
+    --bio-border-color: #23284f;
+    --about-bg-color: #1f5881d5;
 }
 
-/* Estilos para o cabeçalho */
-header {
-    color: white;
+
+/* General */
+.highlight {
+    color: var(--main-color);
+}
+
+/* Container */
+
+#container {
+    display: flex;
+    flex-direction: row;
+    color: var(--main-text-color);
+}
+
+#bio-container {
+    flex: 1 1 30%;
+    min-height: 100vh;
+    background-color: var(--bio-bg-color);
     text-align: center;
-    border-bottom: 2px solid #333333;
-    padding: 20px; /* Adiciona espaço interno */
-    font-size: 24px; /* Tamanho da fonte em pixels */
+    padding: 30px 12px;
+    border-right: 5px solid var(--bio-border-color);
 }
 
-/* Estilos para a barra lateral */
-aside {
-    background-color: white;
-    border: 1px solid #ccc;
+#about-container {
+    flex: 1 1 70%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: var(--about-bg-color);
+    padding: 50px;
+
+}
+
+#fone{
+    margin-left: 70px;
+    color: #0a91eb;
+}
+/* Bio Container */
+
+#bio-container h2 {
+    margin-bottom: 25px;
+}
+
+#bio-container p {
+    margin-bottom: 20px;
+}
+
+#bio-container #welcome-text {
+    font-weight: bold;
+}
+
+#bio-image {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+
+#social-container {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+
+}
+
+#social-container li {
+    flex: 1 1 0;
+    max-width: 60px;
+}
+
+#social-container li a {
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+#email-container {
+    display: flex;
+    justify-content: center;
+}
+
+#email-container ion-icon,
+#email-container a {
+    flex: 1 1 0;
+}
+
+#email-container a {
+    color: var(--main-text-color);
+    text-decoration: none;
+    max-width: 225px;
+}
+
+#email-container ion-icon {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 5px;
+    max-width: 20px;
+}
+
+/* About container */
+
+#name {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+#title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.description {
+    max-width: 75%;
+    margin-bottom: 10px;
+}
+
+#btn-projects {
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--main-text-color);
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .5s;
+    margin: 25px 0;
+    padding: 12px 10px;
+    width: 150px;
     text-align: center;
-    color: black;
-    border-bottom: 2px solid #333333;
-    padding: 20px; /* Adiciona espaço interno */
-    font-size: 24px; /* Tamanho da fonte em pixels */
+    display: flex;
 }
 
-/* Estilos para legendas */
-figcaption {
-    font-size: 14px; /* Tamanho da fonte em pixels */
-    font-style: italic;
+#btn-projects ion-icon,
+#btn-projects span {
+    flex: 1 1 0;
 }
 
-/* Estilos para cabeçalhos de nível 1 */
+#btn-projects ion-icon {
+    font-size: 20px;
+    max-width: 20px;
+}
+
+#btn-projects:hover {
+    background-color: transparent;
+}
+
+#skills-section-title {
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+#skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.skills-box {
+    flex: 1 1 33%;
+    max-width: 33%;
+    margin-bottom: 35px;
+}
+
+.skills-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 5px solid var(--main-color);
+}
+
+.skills-box i {
+    font-size: 45px;
+    margin-right: 10px;
+}
+
+
+/* mobile */
+
+@media(max-width: 450px) {
+
+    #container {
+        flex-direction: column;
+    }
+
+    #bio-container {
+        min-height: auto;
+        border-right: none;
+        border-bottom: 5px solid var(--bio-border-color);
+    }
+
+    #bio-container h2 {
+        display: none;
+    }
+
+    #bio-container p {
+        max-width: 60%;
+        margin: 10px auto;
+    }
+
+    #about-container {
+        text-align: center;
+        padding: 30px;
+    }
+
+    #about-container .description {
+        margin: 10px auto;
+        max-width: 100%;
+        line-height: 26px;
+
+    }
+
+    #btn-projects {
+        margin: 20px auto;
+
+    }
+
+    .skills-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .skills-box i {
+        font-size: 60px;
+    }
+
+
+}
+
+
+/*
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 h1 {
-    font-family: serif;
-    background-image: url(../img/wit.jfif);
-    padding: 20px;
-    font-size: 36px; /* Tamanho da fonte em pixels */
+    color: red;
 }
 
-.quadrado {
-    width: 40%; /* Largura do quadrado */
-    margin: 40px auto; /* Margem para centralizar o quadrado */
-  }
-  
-  #texto {
-    font-family: Times;
-    font-size: 18px; /* Tamanho da fonte em pixels */
-    text-align: center;
-  }
-  
-/* Estilos para cabeçalhos de nível 2 */
-h2 {
-    margin-top: 20px; /* Margem superior em pixels */
-    font-size: 24px; /* Tamanho da fonte em pixels */
-}
-
-/* Estilos para o elemento com ID 'contato' */
-#contato {
-    margin-bottom: 6px; /* Margem inferior em pixels */
-    font-size: 30px; /* Tamanho da fonte em pixels */
-}
-
-/* Estilos para o corpo do documento */
-body {
-    background-color: grey;
-    font-size: 16px; /* Tamanho da fonte em pixels */
-}
-
-/* Estilos para o elemento com ID 'div1' */
-#div1 {
-    background-position: center;
-    background-color: gray;
-    height: 300px; /* Altura em pixels */
-    text-align: center;
-    margin: 10px;
-}
-
-/* Estilos para o elemento com ID 'gato' */
-#gato {
-    width: 30%; /* Largura em relação à largura do pai */
-    height: 100%; /* Altura em relação à altura do pai */
-}
-
-/* Estilos para o elemento com ID 'dif' */
-#dif {
-    background-color: white;
-    text-align: center;
-    font-size: 30px; /* Tamanho da fonte em pixels */
-}
-
-/* Estilos para o rodapé */
-footer {
-    background-color: white;
-    width: 5%; 
-    height: 20px; /* Altura em pixels */
-    font-size: 14px; /* Tamanho da fonte em pixels */
-}
-
-@media screen and (max-width: 768px) {
-    #texto{
-        font-size: 16px;
-    }
-    .quadrado {
-        width: 80%; /* Largura do quadrado */
-        margin: 40px auto; /* Margem para centralizar o quadrado */
-      }
-    #div1{
-        width: 100%;
-        height: 80%;
-    }
-  }
+*/
